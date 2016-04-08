@@ -40,16 +40,14 @@ func download(url string) {
 	log.Println(n, " bytes downloaded at ", time.Now(), " into file ", filename)
 }
 
-func LoadCourses() ([][]models.Course) {
-	seasons := [][]models.Course{[]models.Course{}, []models.Course{}, []models.Course{}}
-	files := []string{"files/sctnenrl_fa.txt", "files/sctnenrl_su.txt", "files/sctnenrl_wi.txt"}
-		for i, f := range files {
-			seasons[i] = loadCourse(f)
-		}
-	return seasons
+func LoadSemesters() ([]models.Course, []models.Course, []models.Course) {
+	fall   := loadCourses("files/sctnenrl_fa.txt")
+	summer := loadCourses("files/sctnenrl_su.txt")
+	winter := loadCourses("files/sctnenrl_wi.txt")
+	return fall, summer, winter
 }
 
-func loadCourse(file string) (courses []models.Course) {
+func loadCourses(file string) (courses []models.Course) {
 	text, err := ioutil.ReadFile(file)
 	check(err)
 	stringText := string(text)
@@ -59,14 +57,13 @@ func loadCourse(file string) (courses []models.Course) {
 			//splits slice of lines, into slice of strings(data) seperated by ;
 			data := strings.Split(l, ";")
 			//export data slice which is a slice of strings from a single line
-			courses = append(courses, addCourse(data, courses)...)
+			courses = parseLine(data, courses)
 		}
 	}
 	return courses
 }
 
-func addCourse(data []string, courses []models.Course) ([]models.Course) {
-	log.Print(data)
+func parseLine(data []string, courses []models.Course) ([]models.Course) {
 	courses = append(courses, models.Course{
 		data[0],  data[3],  data[4],
 		data[5],  data[9],  data[15],

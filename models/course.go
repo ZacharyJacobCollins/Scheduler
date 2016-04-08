@@ -19,9 +19,3 @@ type Course struct {
 	Location            string // 26
 	Professor           string //28
 }
-
-type SeasonCourses struct {
- 	FallCourses   []Course
- 	SummerCourses []Course
-	WinterCourses []Course
-}

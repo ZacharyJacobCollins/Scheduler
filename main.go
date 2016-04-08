@@ -9,17 +9,18 @@ package main
 import (
 	"log"
 	"github.com/ZacharyJacobCollins/Scheduler/services"
+	"github.com/ZacharyJacobCollins/Scheduler/models"
 )
 
+var fall   []models.Course
+var summer []models.Course
+var winter []models.Course
 
 func main() {
 	//services.DownloadFiles()
-	//parseFile("")
-	//iterateStruct()
-	seasons := services.LoadCourses()
-	log.Print(seasons[0])
+	fall, summer, winter = services.LoadSemesters()
+	log.Print(fall[369].Title)
 }
-
 
 
 //TODO send me an email with the error output.
