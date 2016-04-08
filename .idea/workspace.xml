@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0106a23a-504d-4144-8fb7-d956871e1ba3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/course.go" afterPath="$PROJECT_DIR$/models/course.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/services.go" afterPath="$PROJECT_DIR$/services/services.go" />
     </list>
     <ignored path="Scheduler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,10 +56,10 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52859616">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.6759099">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
               <folding>
-                <element signature="e#312#433#0" expanded="true" />
+                <element signature="e#389#517#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -532,7 +530,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -590,7 +588,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#312#433#0" expanded="true" />
+            <element signature="e#389#517#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -644,10 +642,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52859616">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.6759099">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
           <folding>
-            <element signature="e#312#433#0" expanded="true" />
+            <element signature="e#389#517#0" expanded="true" />
           </folding>
         </state>
       </provider>
