@@ -14,6 +14,7 @@ import (
 	"github.com/ZacharyJacobCollins/Scheduler/services"
 	"github.com/ZacharyJacobCollins/Scheduler/models"
 	"fmt"
+	"strings"
 )
 
 var fall   []models.Course
@@ -28,18 +29,18 @@ func main() {
 }
 
 func prompt() {
-	fmt.Print("Enter the category of the course you're looking for: ")
-	var category string
-	fmt.Scan(&category)
-	fmt.Print("Enter the class number of the course you're looking for: ")
-	var classNumber string
-	fmt.Scan(&classNumber)
-	find("COSC", "221", fall)
+	fmt.Print("Enter a professor you're looking for to see their location: ")
+	var professor string
+	fmt.Scan(&professor)
+	//fmt.Print("Enter the class number of the course you're looking for: ")
+	//var classNumber string
+	//fmt.Scan(&classNumber)
+	find(professor, fall)
 }
 
-func find(category string, classNumber string, set []models.Course) {
+func find(professor string, set []models.Course) {
 	for _, course := range set {
-		if (course.Category == category) {
+		if (strings.TrimSpace(course.Professor) == professor) {
 			fmt.Println("Here you are! ", course)
 		}
 	}

@@ -15,7 +15,8 @@ type Course struct {
 	Thursday            string
 	Friday              string
 	Saturday            string
-	Sunday              string  //25
-	Location            string // 26
+	Sunday              string //25
+	Building            string //26
+	Room		    string //27
 	Professor           string //28
 }

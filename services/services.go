@@ -12,7 +12,6 @@ import (
 	"github.com/ZacharyJacobCollins/Scheduler/models"
 )
 
-
 func DownloadFiles() {
 	urls := []string{
 		"http://it.emich.edu/bannerfiles/sctnenrl_fa.txt",
@@ -70,7 +69,8 @@ func parseLine(data []string, courses []models.Course) ([]models.Course) {
 		data[16], data[17], data[18],
 		data[19], data[20], data[21],
 		data[22], data[23], data[24],
-		data[25], data[26], data[28],
+		data[25], data[26], data[27],
+		data[28],
 	})
 	return courses
 }
